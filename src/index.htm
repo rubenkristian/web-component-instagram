@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Instagram - Clone</title>
+    <style>
+      html, body {
+        margin: 0;
+        background-color: rgb(233, 233, 233);
+      }
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+      <header-menu>
+        <id slot="left"></id>
+        <id slot="center">
+          <search-box></search-box>
+        </id>
+        <id slot="right"></id>
+      </header-menu>
+      <script>
+        var body = document.body;
+        var module = ['./module/header.js', './module/card.js', './module/search.js'];
+
+        module.forEach((val, index) => {
+          setTimeout(()=> {
+            var module = document.createElement('script');
+            module.src = val;
+            module.type = 'module';
+            body.firstChild.before(module);
+          }, 1);
+        })
+      </script>
+  </body>
+</html>

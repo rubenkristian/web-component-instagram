@@ -1,0 +1,40 @@
+.search {
+  border: 1px solid rgb(26, 25, 25);
+  border-radius: 5px;
+  max-width: 180px;
+  width: 180px;
+  padding: 4px 16px;
+  display: block;
+  position: relative;
+}
+
+.active {
+  border: 2px solid rgb(31, 96, 216);
+}
+
+input[type="text"] {
+  height: auto;
+  border: hidden;
+  display: flex;
+  flex: 100%;
+}
+
+input[type="text"]:focus, input[type="text"]:active {
+  outline: none;
+}
+
+.box_suggestion {
+  display: none;
+  position: absolute;
+  height: 320px;
+  left: -20px;
+  margin-top: 6px;
+  padding: 0 20px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+.show {
+  display: block;
+}
