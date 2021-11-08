@@ -1,14 +1,14 @@
 const template = document.createElement('template');
 template.innerHTML = `
-    <link rel="stylesheet" href="./stylesheet/search.css">
+  <link rel="stylesheet" href="./stylesheet/search.css">
 
-    <div class="search">
-        <input type="text" placeholder="search..."/>
-        <div class="box_suggestion">
-            <div style="width:300px">
-            </div>
-        </div>
-    </div>
+  <div class="search">
+      <input type="text" placeholder="search..."/>
+      <div class="box_suggestion">
+          <div style="width:300px">
+          </div>
+      </div>
+  </div>
 `;
 
 class SearchBox extends HTMLElement {
